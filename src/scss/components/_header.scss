@@ -1,0 +1,52 @@
+.header {
+    .container{
+      padding: 16px 20px;
+    }
+    &-wrapper{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      gap: 20px;
+    }
+		&__logo {
+		}
+
+		&__links {
+      display: flex;
+      gap: 32px;
+		}
+
+		&__link {
+		}
+
+		&__info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      span{
+        content: '';
+        width: 1px;
+        height: 72px;
+        background-color: var(--blue);
+      }
+		}
+
+		&__contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+		}
+
+		&__link-phone {
+		}
+
+		&__btn-container {
+      height: max-content;
+		}
+
+		&__btn {
+		}
+    
+}
