@@ -83,7 +83,7 @@
 
 }
 .container.main-con{
-    max-width: calc(100vw - (100vw - 1560px)/2);
+    max-width: calc(100vw - (100vw - 1560px)/2 - 20px);
     width: 100%;
     margin-left: calc((100vw - 1560px)/2);
     margin-right: 0;

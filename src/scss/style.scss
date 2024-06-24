@@ -3,11 +3,17 @@
 
 @import 'components/_header.scss';
 @import 'components/_footer.scss';
+
 @import 'components/UI/btn';
 @import 'components/UI/input';
+@import 'components/UI/checkbox';
+
 @import 'components/blocks/mainSlider';
+@import 'components/blocks/roadMap';
+@import 'components/blocks/reviews';
 
 @import 'pages/index.scss';
 
 
 @import '../../node_modules/swiper/swiper-bundle.css';
+@import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css'

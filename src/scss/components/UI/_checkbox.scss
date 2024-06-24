@@ -1,0 +1,35 @@
+.custom-checkbox-container{
+    position: relative;
+    display: flex;
+    
+    label{
+        padding: 0 0 0 36px;
+        display: flex;
+    }
+    .custom-checkbox{
+        opacity: 0;
+        visibility: hidden;
+        
+        &+::before{
+            content:  ' ';
+            width: 24px;
+            height: 24px;
+            background-color: #fff;
+            border-radius: 8px;
+            position: absolute;
+            top: 0;    
+            left: 0;
+        }
+        &+::after{
+            content: ' ';
+            background-image: url('../../../img/index/Line1.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 6px;
+    left: 6px;
+    width: 12px;
+    height: 13px;
+        }
+    }
+}
