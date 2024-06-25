@@ -7,6 +7,9 @@
     width: max-content;
     height: max-content;
     transition: .5s;
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
     &_blue{
         background-color: var(--blue);
         color: #fff;
@@ -21,6 +24,15 @@
         &:hover{
             background-color: var(--blue);
         color: #fff;
+        }
+    }
+    &_transparent{
+        background-color: transparent;
+        color: var(--blue);
+        border: 1px solid var(--blue);
+        &:hover{
+            background-color: var(--blue);
+            color: #fff;
         }
     }
 }

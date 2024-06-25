@@ -1,0 +1,31 @@
+.services {
+
+&__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+&__card {
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 24px;
+    align-items: flex-end;
+    border-radius: 24px;
+}
+
+&__card-title {
+    font-size: 24px;
+    color: var(--blue);
+}
+
+&__card-btn {
+}
+}
+
+.services-swiper {
+    width: 100%;
+}

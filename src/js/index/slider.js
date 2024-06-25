@@ -23,5 +23,17 @@ const swiperTwo = new Swiper('.rewiews-swiper', {
 		prevEl: '.reviews-btn-prev',
 	},
 })
+const swiperThree = new Swiper('.services-swiper', {
+	slidesPerView: 3,
+	spaceBetween: 20,
+
+	pagination: {
+		el: '.reviews-swiper-pagination',
+	},
+	navigation: {
+		nextEl: '.reviews-btn-next',
+		prevEl: '.reviews-btn-prev',
+	},
+})
 
 }
