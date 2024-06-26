@@ -6,6 +6,7 @@ export function slider(){
 Swiper.use([Navigation, Pagination])
 
 const swiper = new Swiper('.main-swiper', {
+	noSwipingSelector: '.slide__boxes',
 	pagination: {
 		el: '.main-swiper-pagination',
 	},

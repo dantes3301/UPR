@@ -1,45 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@@title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://api-maps.yandex.ru/v3/?apikey=31395160-48e5-4f64-b599-488f67a744c4&lang=ru_RU"></script>
-</head>
-<body>
-<div class="wrapper">
-    <header class="header">
-        <div class="container">
-            <div class="header-wrapper">
-                <a href="#" class="header__logo">
-                    <img src="@img/logo.svg" alt="">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>@@title</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://api-maps.yandex.ru/v3/?apikey=31395160-48e5-4f64-b599-488f67a744c4&lang=ru_RU"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header-wrapper">
+						<a href="#" class="header__logo">
+							<img src="@img/logo.svg" alt="" />
+						</a>
+						<nav class="header__links">
+							<a href="#main" class="header__link">Дорожная карта</a>
+							<a href="#reviews" class="header__link">Отзывы</a>
+							<a href="#contact" class="header__link">Контакты</a>
+							<a href="#services" class="header__link">Услуги</a>
+						</nav>
+						<div class="header__info">
+							<div class="header__contacts">
+								<a href="tel:+79912228985" class="header__link-phone"
+									>+ 7(991) 222-89-85</a
+								>
+								<a href="#" class="header__adress"
+									>г. Уфа, ул Мендлеева, 134 к1</a
+								>
+							</div>
+							<span></span>
+							<div class="header__btn-container">
+								<div id="modal-1" class="header__btn btn btn_blue open-popup">
+									Получить консультацию
+								</div>
+                                <a href="tel:+79912228985" class="header__link-phone-mobil">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="12" fill="#EFEFEF"/>
+<path d="M30.327 34.4998C29.4118 34.4998 28.1262 34.1689 26.2011 33.0936C23.8602 31.781 22.0495 30.5693 19.7212 28.2476C17.4764 26.0046 16.384 24.5524 14.855 21.7708C13.1278 18.6301 13.4223 16.9838 13.7514 16.2802C14.1433 15.4393 14.7219 14.9363 15.4697 14.4371C15.8945 14.1588 16.3439 13.9203 16.8125 13.7246C16.8594 13.7044 16.903 13.6852 16.9419 13.6678C17.174 13.5633 17.5256 13.4053 17.971 13.5741C18.2682 13.6857 18.5336 13.9139 18.949 14.3241C19.8009 15.1641 20.965 17.0349 21.3945 17.9537C21.6829 18.5729 21.8737 18.9817 21.8741 19.4401C21.8741 19.9768 21.6041 20.3907 21.2764 20.8375C21.2149 20.9214 21.154 21.0015 21.0949 21.0793C20.7381 21.5481 20.6598 21.6836 20.7114 21.9254C20.816 22.4115 21.5956 23.8586 22.877 25.1369C24.1584 26.4152 25.564 27.1455 26.052 27.2496C26.3043 27.3035 26.4426 27.2219 26.9264 26.8525C26.9958 26.7996 27.0671 26.7447 27.1416 26.6899C27.6414 26.3182 28.0362 26.0552 28.5604 26.0552H28.5632C29.0194 26.0552 29.4099 26.253 30.0569 26.5793C30.9008 27.0049 32.8283 28.1538 33.6736 29.0065C34.0848 29.4209 34.314 29.6852 34.4261 29.982C34.5949 30.4287 34.4359 30.7788 34.3323 31.0132C34.315 31.0521 34.2957 31.0948 34.2756 31.1421C34.0782 31.6097 33.8383 32.0582 33.5587 32.4818C33.0603 33.2271 32.5554 33.8042 31.7124 34.1965C31.2795 34.4012 30.8058 34.5049 30.327 34.4998Z" fill="#152A60"/>
+</svg>
+
+                                </a>
+								<div class="header__burger">
+									<svg
+										width="48"
+										height="48"
+										viewBox="0 0 48 48"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<rect width="48" height="48" rx="12" fill="#152A60" />
+										<rect
+											x="11.4287"
+											y="17.1431"
+											width="25.1429"
+											height="2.28571"
+											rx="1.14286"
+											fill="white"
+										/>
+										<rect
+											x="11.4287"
+											y="22.8574"
+											width="25.1429"
+											height="2.28571"
+											rx="1.14286"
+											fill="white"
+										/>
+										<rect
+											x="11.4287"
+											y="28.5718"
+											width="25.1429"
+											height="2.28571"
+											rx="1.14286"
+											fill="white"
+										/>
+									</svg>
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="12" fill="#EFEFEF"/>
+<rect x="15.6172" y="14" width="26" height="2.28571" rx="1.14286" transform="rotate(45 15.6172 14)" fill="#152A60"/>
+<rect x="14" y="32.3848" width="26" height="2.29" rx="1.145" transform="rotate(-45 14 32.3848)" fill="#152A60"/>
+</svg>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+            <div class="header__menu-mobil">
+                    <div class="header__menu-frame">
+                        <nav class="header__links">
+							<a href="#main" class="header__link">Дорожная карта</a>
+							<a href="#reviews" class="header__link">Отзывы</a>
+							<a href="#contact" class="header__link">Контакты</a>
+							<a href="#services" class="header__link">Услуги</a>
+						</nav>
+                        <span></span>
+                        <div class="header__contacts">
+								<a href="tel:+79912228985" class="header__link-phone"
+									>+ 7(991) 222-89-85</a
+								>
+								<a href="#" class="header__adress"
+									>г. Уфа, ул Мендлеева, 134 к1</a
+								>
+						</div>
+                    </div>
+            </div>
+            <div class="container-arrow-btn">
+                <div class="container">
+                    <a href="#main" class="arrow-btn">
+                    <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="68" height="68" rx="34" fill="white"/>
+                    <rect x="1" y="1" width="68" height="68" rx="34" stroke="#152A60" stroke-width="2"/>
+                    <path d="M42 27L35 20L28 27" stroke="#152A60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M35 20L35 50" stroke="#152A60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-                <nav class="header__links">
-                    <a href="#main" class="header__link">Дорожная карта</a>
-                    <a href="#reviews" class="header__link">Отзывы</a>
-                    <a href="#contact" class="header__link">Контакты</a>
-                    <a href="#services" class="header__link">Услуги</a>
-                </nav>
-                <div class="header__info">
-                    <div class="header__contacts">
-                        <a href="tel:+79912228985" class="header__link-phone">+ 7(991) 222-89-85</a>
-                        <a href="#" class="header__adress">г. Уфа, ул Мендлеева, 134 к1</a>
-                    </div>
-                    <span></span>
-                    <div class="header__btn-container">
-                        <div class="header__btn btn btn_blue open-modal">
-                            Получить консультацию
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-   
-      
-    <main id="main" class="main">
-        
+			<main id="main" class="main">
+

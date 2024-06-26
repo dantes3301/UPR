@@ -16,6 +16,9 @@ export default class ActiveClass {
 		this._active = value
 		this._setClass()
 	}
+	setToggleActive() {
+		this._element.classList.toggle(this._className)
+	}
 	_setClass() {
 		if (this._active) {
 			this._element.classList.add(this._className)
