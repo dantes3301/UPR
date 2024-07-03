@@ -36,4 +36,13 @@
             color: #fff;
         }
     }
+    &_transparent-white{
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        &:hover{
+            background-color: var(--blue);
+            color: #fff;
+        }
+    }
 }

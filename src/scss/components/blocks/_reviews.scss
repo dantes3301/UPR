@@ -44,7 +44,9 @@
     iframe{
         display: none;
     }
-
+    @media (max-width: 1280px) {
+        height: 380px;
+    }
 }
 
 
@@ -129,6 +131,9 @@
         // height: 100%;
         width: 100%;
         top: 0;
+        @media (max-width:560px) {
+            top: -30%;
+        }
 }
 .reviews-btn{
     display: flex;

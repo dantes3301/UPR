@@ -17,4 +17,5 @@ import './index/inputs.js'
 import './index/footerMap.js'
 import './index/modals.js'
 import './index/header.js'
+import './index/roadMap.js'
 

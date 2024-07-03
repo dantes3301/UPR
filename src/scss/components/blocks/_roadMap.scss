@@ -7,11 +7,20 @@
     padding: 60px 0 40px 0;
 }
 .road-map {
+    @media (max-width:1280px) {
+        height: auto;
+        padding: 0;
+        background-image: none !important;
+    }
 
 &__form-container {
     display: flex;
     flex-direction: column;
     gap: 80px;
+    @media (max-width:1280px) {
+        gap: 20px;
+        
+    }
 }
 
 &__form {
@@ -27,6 +36,32 @@
         font-size: 30px;
         font-weight: 700;
         margin: 0 0 16px 0;
+    }
+    @media (max-width:1280px) {
+        max-width: 100%;
+        padding: 24px;
+        .road-map__form-inputs{
+            display: flex;
+            flex-direction: row;
+            .input-container{
+                width: 100%;
+            }
+        }
+        .title{
+            font-size: 24px;
+        }
+    }
+    @media (max-width:560px) {
+        padding: 20px;
+        .road-map__form-inputs{
+            flex-direction: column;
+        }
+        .title{
+            font-size: 18px;
+        }
+        .road-map__form-text{
+            font-size: 14px;
+        }
     }
 }
 
@@ -92,10 +127,55 @@
         color: #fff;
         font-size: 14px;
     }
+    .btn{
+        display: none;
+    }
+    
+    @media (max-width:1440px) {
+        left: 0;
+    }
+    @media (max-width:1280px) {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        background-color: var(--blue);
+        .btn{
+            display: flex;
+            height: 48px;
+        }
+        p{
+            // height: 44px;
+            // text-overflow: ellipsis;
+            max-height: 33px;
+            line-height: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        &.active{
+            .btn{
+                display: none;
+            }
+            p{
+                text-overflow:clip;
+                max-height: 100% !important;
+                display:inline;
+            }
+        }
+    }
+    @media (max-width:560px) {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-end;;
+    }
 }
 .road-map-wrapper{
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    
+    @media (max-width:1280px) {
+        flex-direction: column;
+    }
 }

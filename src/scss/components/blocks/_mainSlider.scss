@@ -36,6 +36,9 @@
             gap: 24px;
         }
     }
+    @media (max-width:560px) {
+        padding: 40px 20px 20px 20px;
+    }
 }
 .main-slide{
     display: flex;
@@ -78,9 +81,18 @@
         background-color: var(--blue);
     }
     @media (max-width:560px) {
-        min-width: 273px;
+        min-width: 280px;
         position: relative;
         z-index: 6;
+        padding: 12px 16px;
+        height: max-content;
+
+        .slide__box-img{
+            height: max-content;
+        }
+        span{
+            height: 47px !important;
+        }
     }
 }
 
@@ -151,6 +163,10 @@
         z-index: 1;
         max-width: 100%;
         padding: 0 40px;
+    }
+    @media (max-width: 560px) {
+        padding: 0 20px;
+        bottom: 125px !important;
     }
 }
 .slide__img{

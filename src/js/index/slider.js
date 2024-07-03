@@ -13,7 +13,7 @@ const swiper = new Swiper('.main-swiper', {
 })
 
 const swiperTwo = new Swiper('.rewiews-swiper', {
-	slidesPerView: 4,
+	slidesPerView: 1,
 	spaceBetween: 20,
 
 	pagination: {
@@ -23,9 +23,17 @@ const swiperTwo = new Swiper('.rewiews-swiper', {
 		nextEl: '.reviews-btn-next',
 		prevEl: '.reviews-btn-prev',
 	},
+	breakpoints:{
+		1280: {
+			slidesPerView: 4,
+		},
+		560: {
+			slidesPerView: 2,
+		}
+	}
 })
 const swiperThree = new Swiper('.services-swiper', {
-	slidesPerView: 3,
+	slidesPerView: 1,
 	spaceBetween: 20,
 
 	pagination: {
@@ -35,6 +43,14 @@ const swiperThree = new Swiper('.services-swiper', {
 		nextEl: '.reviews-btn-next',
 		prevEl: '.reviews-btn-prev',
 	},
+	breakpoints:{
+		1280: {
+			slidesPerView: 3,
+		},
+		560: {
+			slidesPerView: 2,
+		}
+	}
 })
 
 }
